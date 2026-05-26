@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            border-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <table class="table" border="2px">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>dob</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in result %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.dob}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
