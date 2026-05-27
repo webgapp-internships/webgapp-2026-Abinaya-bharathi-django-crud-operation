@@ -10,7 +10,8 @@ urlpatterns = [
     # path('contact',views.contact,name='contact'),
     path('form',views.form,name='form'),
     path('result',views.result,name='result'),
-    path('formedit',views.formedit,name='formedit'),
+    path('formedit/<int:id>',views.formedit,name='formedit'),
+    path('formdelete/<int:id>',views.formdelete,name='formdelete'),
 
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT);
